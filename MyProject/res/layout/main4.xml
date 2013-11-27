@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/image" >
+    
+    <ScrollView 
+        android:id="@+id/scrollmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+     
+     <TableLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+         <TableRow >
+              <TextView
+     			android:layout_width="fill_parent"
+     			android:layout_height="wrap_content"
+     			android:layout_gravity="center"
+     			android:textSize="26dp"
+    			android:text="Enter Transaction Details"
+     			android:textColor="#0F0"
+     			android:layout_span="3" />
+         </TableRow>
+         <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Account No."
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:textColor="#0CF"/>
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="135dp"
+             android:layout_height="wrap_content"
+             android:id="@+id/ac"
+             android:layout_marginLeft="2dp"
+             android:textSize="17dp"
+             android:textColor="#FF0"
+             android:layout_span="2"/>
+         
+     </TableRow>  
+     <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Transaction ID"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:textColor="#0CF"/>
+         <EditText 
+             android:layout_marginTop="10dp"
+             android:layout_width="135dp"
+             android:layout_height="40dp"
+             android:id="@+id/trnsc_id"
+             android:layout_marginLeft="2dp"
+             android:inputType="text"
+             android:textSize="20dp"
+             android:layout_span="2"
+             android:textColor="#FFF"/>
+         
+     </TableRow>  
+         
+      <TableRow >
+         <TextView 
+              android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#0CF"
+             android:text="Date"           
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:layout_span="1"/>
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="85dp"
+             android:layout_height="40dp"
+             android:id="@+id/date"
+             android:layout_marginLeft="2dp"
+             android:textSize="14dp"
+             android:textColor="#FFF"
+             android:layout_span="1"/>
+         <Button 
+             android:layout_marginTop="10dp"
+             android:id="@+id/daypickb"
+       		 android:layout_width="40dp"
+        	 android:layout_height="40dp"
+        	 android:layout_marginLeft="4dp"
+        	 android:text="Date"
+        	 android:background="#CCC"/>
+         
+     </TableRow>     
+      <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Time"
+             android:textColor="#0CF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"/>
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="85dp"
+             android:layout_height="40dp"
+             android:id="@+id/time"
+             android:textColor="#FFF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:layout_span="1"/>
+         <Button 
+             android:layout_marginTop="10dp"
+             android:id="@+id/timepickb"
+       		 android:layout_width="55dp"
+        	 android:layout_height="40dp"
+        	 android:layout_marginLeft="4dp"
+        	 android:text="Time"
+        	 android:background="#CCC"/>
+         
+     </TableRow>     
+      <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Mode"
+             android:textColor="#0CF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"/>
+         <Spinner 
+             android:layout_marginTop="10dp"
+             android:layout_width="135dp"
+             android:layout_height="40dp"
+             android:id="@+id/spinmode"
+             android:prompt="@string/my_prompt"
+             android:background="#ccc"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:layout_span="2" />
+         
+     </TableRow>     
+      <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Amount"
+             android:textColor="#0CF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             />
+         <EditText 
+              android:layout_marginTop="10dp"
+             android:layout_width="135dp"
+             android:layout_height="40dp"
+             android:id="@+id/amount"
+             android:hint="@string/rs_"
+             android:textColor="#FFF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:inputType="number"
+             android:layout_span="2"/>
+         
+     </TableRow>     
+      <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Transaction Type"
+             android:textColor="#0CF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"/>
+         <RadioGroup
+        	android:id="@+id/radiotype"
+        	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+        	android:layout_span="2">
+
+        <RadioButton
+            android:id="@+id/Credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+             android:button="@drawable/btn_radio_holo_dark"
+            android:text="Credit"
+            android:textSize="13dp"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/Debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+             android:button="@drawable/btn_radio_holo_dark"
+            android:text="Debit"
+             android:textSize="13dp"
+            android:textColor="#FFF" />
+    </RadioGroup>
+         
+     </TableRow>      
+      <TableRow >
+         <TextView 
+             android:layout_marginTop="10dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Transaction Refno."
+             android:textColor="#0CF"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"/>
+         <EditText 
+             android:layout_marginTop="10dp"
+             android:layout_width="135dp"
+             android:layout_height="40dp"
+             android:id="@+id/trnsc_ref_no"
+             android:textColor="#FFF"
+             android:inputType="number"
+             android:layout_marginLeft="2dp"
+             android:textSize="20dp"
+             android:layout_span="2"/>
+         
+     </TableRow>   
+     <TableRow>
+         <Button 
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_rec"
+        android:text="Add Record"
+        android:background="#CCC"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_span="3"/>
+     </TableRow>    
+         
+    </TableLayout>
+    
+    </ScrollView>
+    
+
+</LinearLayout>

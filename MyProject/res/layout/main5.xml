@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="horizontal" >
+    
+    <ScrollView 
+        android:id="@+id/scrollmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+  
+   <TableLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" >
+     
+       <TableRow >
+           <TextView
+     			android:layout_width="wrap_content"
+     			android:layout_height="wrap_content"
+     			android:layout_gravity="center"
+     			android:textSize="32dp"
+     			android:layout_span="2"
+     			android:text="Transaction Details"
+     			android:textColor="#0f0" />
+       </TableRow>
+
+        <TableRow >
+      <TextView 
+       android:text="Account No."
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+       /> 
+      <TextView 
+        android:id="@+id/ACC"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0"/>
+     </TableRow>
+   <TableRow >
+     <TextView 
+       android:text="Transaction ID"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"/>
+    <TextView 
+        android:id="@+id/TRANSID"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f00"/>
+      </TableRow>
+    
+     <TableRow >
+     <TextView 
+       android:text="Date"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+        /> 
+     <TextView 
+        android:id="@+id/TRANSDATE"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+      <TextView 
+       android:text="Time"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+        /> 
+     <TextView 
+        android:id="@+id/TRANSTIME"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+    </TableRow>
+    <TableRow >
+       <TextView 
+       android:text="Mode"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+       /> 
+     <TextView 
+        android:id="@+id/MODE"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+     <TextView 
+       android:text="Amount"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+       /> 
+    <TextView 
+        android:id="@+id/AMNT"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+     <TextView 
+       android:text="Transaction Type"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+        /> 
+     <TextView 
+        android:id="@+id/TRANSTYPE"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+    </TableRow>
+    <TableRow >
+     <TextView 
+       android:text="Ref Number"
+       android:textSize="20dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#0cf"
+      /> 
+      <TextView 
+        android:id="@+id/REF"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+    </TableRow>
+    
+    <TableRow 
+        android:layout_marginTop="30dp">
+        <Button  
+     		android:id="@+id/back"
+     		android:text="Back"
+     		
+     		android:layout_span="3"
+     		android:layout_width="fill_parent"
+     		android:layout_height="40dp"
+     		android:background="#CCC"/>
+    </TableRow>
+    
+ </TableLayout>
+ </ScrollView>
+    
+</LinearLayout>

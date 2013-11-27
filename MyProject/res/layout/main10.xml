@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/textViw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0"
+        android:text="Choose Mode"
+        android:textSize="30dp" />
+    <RadioGroup
+        	android:id="@+id/radiomode"
+        	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+        	>
+
+        <RadioButton
+            android:id="@+id/cash"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_radio_holo_dark"
+            android:onClick="onRadioButtonClick"
+            android:text="Cash"
+            android:textColor="#FFF"
+             />
+
+        <RadioButton
+            android:id="@+id/cheque"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClick"
+            android:button="@drawable/btn_radio_holo_dark"
+            android:text="Cheque"
+            android:textColor="#FFF" />
+        <RadioButton
+            android:id="@+id/atm"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:button="@drawable/btn_radio_holo_dark"
+            android:onClick="onRadioButtonClick"
+            android:text="ATM"
+            android:textColor="#FFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/sbmt1"
+        android:layout_width="94dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="4dp"
+        android:background="#CCC"
+        android:text="Submit" />
+
+</LinearLayout>

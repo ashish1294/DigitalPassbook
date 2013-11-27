@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:isScrollContainer="true"
+    android:background="@drawable/image"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+   
+    <ScrollView 
+        android:id="@+id/scrollmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="3"
+                android:text="Fill in the details"
+                android:textColor="#0f0"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="1"
+                android:text="AccountNo."
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/accno"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textColor="#FFF"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Opening "
+                android:textColor="#0cf" />
+
+            <TextView
+                android:id="@+id/daye"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:textSize="28dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/daypickbut"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/editText1"
+                android:layout_marginLeft="4dp"
+                android:background="#CCC"
+                android:text="Date" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_span="1"
+                android:text="Account Type"
+                android:textColor="#0cf" />
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/CurrentAc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                     android:button="@drawable/btn_radio_holo_dark"
+                    android:text="Current"
+                    android:textColor="#FFF" />
+
+                <RadioButton
+                    android:id="@+id/SavingsAc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:button="@drawable/btn_radio_holo_dark"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Savings"
+                    android:textColor="#FFF" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Name"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/bname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textColor="#FFF"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch Name"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/brname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="text"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch Address"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/bradd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="text"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch Phno."
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/brph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="number"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch Fax"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/brfax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="number"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IFSC Code"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/ifsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:inputType="text"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance"
+                android:textColor="#0cf" />
+
+            <EditText
+                android:id="@+id/bal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:hint="@string/rs_"
+                android:inputType="number"
+                android:textColor="#FFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp" >
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_span="3"
+                android:background="#CCC"
+                android:text="Submit" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

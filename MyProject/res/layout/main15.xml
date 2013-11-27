@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/image" >
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0f0"
+        android:text="New Transaction"
+        android:textSize="38sp" 
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      	 android:textColor="#ff0"
+        android:text="Enter Account No."
+        android:textSize="30dp" 
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"/>
+   <EditText 
+       android:id="@+id/edt"
+       android:layout_width="270dp"
+       android:layout_height="wrap_content"
+       android:textColor="#fff"
+       android:inputType="number"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/sb"
+        android:layout_width="94dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:background="#CCC"
+        android:text="Submit" />
+
+</LinearLayout>

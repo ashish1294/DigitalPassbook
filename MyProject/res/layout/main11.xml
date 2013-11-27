@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textViw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0"
+        android:text="Choose Type"
+        android:textSize="30dp" />
+<RadioGroup
+        	android:id="@+id/radiotype"
+        	android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+        	>
+
+        <RadioButton
+            android:id="@+id/Cred"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClick"
+            android:text="Credit"
+             android:button="@drawable/btn_radio_holo_dark"
+            android:textColor="#FFF" />
+
+        <RadioButton
+            android:id="@+id/Deb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButtonClick"
+            android:text="Debit"
+             android:button="@drawable/btn_radio_holo_dark"
+            android:textColor="#FFF" />
+    </RadioGroup>
+
+     <Button
+         android:id="@+id/sbmt2"
+         android:layout_width="88dp"
+         android:layout_height="30dp"
+         android:layout_marginLeft="4dp"
+         android:background="#CCC"
+         android:text="Submit" />
+
+</LinearLayout>

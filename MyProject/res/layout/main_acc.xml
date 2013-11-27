@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/image">
+
+    <TextView
+     			
+     		 android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+     			android:textSize="28dp"
+     			android:text="Your Account Details"
+     			android:layout_gravity="center"
+     			android:textColor="#0f0"
+     			 />
+    
+<ScrollView
+        android:id="@+id/scrollmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+  
+   <TableLayout
+    android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+   <TableRow >
+     <TextView 
+       android:text="AccountNo."
+       android:textSize="20dp"
+        android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/>
+    <TextView 
+        android:id="@+id/acc_no"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#ff0"/>
+      </TableRow>
+     <TableRow >
+      <TextView 
+       android:text="Date of Opening "
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+      <TextView
+        android:id="@+id/DOO"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+     <TextView 
+       android:text="Type"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+     <TextView 
+        android:id="@+id/TYPE"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+      <TextView 
+       android:text="Bank Name"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+     <TextView 
+        android:id="@+id/BNAME"
+       android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+    </TableRow>
+    <TableRow >
+       <TextView 
+       android:text="Branch Name"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/>
+     <TextView 
+        android:id="@+id/BRNAME"
+        android:textSize="13dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"/>
+     </TableRow>
+     <TableRow >
+     <TextView 
+       android:text="Branch Address"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="140dp"
+       android:layout_height="wrap_content"
+       android:minHeight="35dp"
+       android:textColor="#0cf"/> 
+
+    <TextView
+        android:id="@+id/BRADDR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:scrollHorizontally="true"
+        android:textColor="#fff"
+        android:textSize="13dp" />
+
+     </TableRow>
+     <TableRow >
+     <TextView 
+       android:text="Branch Phno."
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+     <TextView 
+        android:id="@+id/PHNO"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+    </TableRow>
+    <TableRow >
+     <TextView 
+       android:text="Branch Fax"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+      <TextView 
+        android:id="@+id/FAX"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+    </TableRow>
+    <TableRow >
+     <TextView 
+       android:text="IFSC Code"
+       android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+   <TextView 
+        android:id="@+id/IFSCC"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+    
+    </TableRow>
+    <TableRow >
+   <TextView 
+     android:text="Balance"
+     android:textSize="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="wrap_content"
+       android:layout_height="35dp"
+       android:textColor="#0cf"/> 
+    <TextView 
+        android:id="@+id/BAL"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:scrollHorizontally="true"
+        android:layout_height="35dp"
+        android:textColor="#fff"/>
+   </TableRow>
+   
+ </TableLayout>
+  
+    </ScrollView>
+<Button  
+     android:id="@+id/back"
+     android:text="Back"
+     android:layout_width="fill_parent"
+     android:layout_height="40dp"
+     android:background="#CCC"
+     
+     />
+</LinearLayout>
